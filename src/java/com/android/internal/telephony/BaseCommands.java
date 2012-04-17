@@ -828,4 +828,12 @@ public abstract class BaseCommands implements CommandsInterface {
     @Override
     public void requestShutdown(Message result) {
     }
+
+    /**
+     * @hide
+     */
+    @Override
+    public int getLteOnGsmMode() {
+        return TelephonyManager.getLteOnGsmModeStatic();
+    }
 }
